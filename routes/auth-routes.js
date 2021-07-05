@@ -143,7 +143,6 @@ const authenticateJwt = require('../middleware/jwtAuthenticator');
                 });
             
         } catch (error) {
-            console.log(error, 'err')
             return res.status(500).json({
                 message: 'Internal Server Error'
             });
